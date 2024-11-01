@@ -14,6 +14,10 @@ async function main() {
     // });
 
     await printCheapestSuburbs(client, "Australia", "Sydney", 5);
+    await client.close();
+    console.log("Connection to cluster closed.");
+  } else {
+    console.error("Failed to connect to the MongoDB cluster.");
   }
 }
 

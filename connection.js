@@ -10,7 +10,7 @@ async function connectToCluster() {
 
   try {
     await client.connect();
-    console.log("Connected to cluster successfully");
+    console.log("Connected to cluster successfull.");
     return client; // Return the client on a successful connection
   } catch (error) {
     console.log("Connection to cluster failed: " + error.message);
